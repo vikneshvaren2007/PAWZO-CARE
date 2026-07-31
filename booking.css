@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.booking-container{
+    width:100%;
+    max-width:700px;
+}
+
+.booking-box{
+    background:#1b1b1b;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,87,87,0.4);
+}
+
+.booking-box h1{
+    text-align:center;
+    color:#ff5a5a;
+    margin-bottom:10px;
+}
+
+.booking-box p{
+    text-align:center;
+    color:#ffffff;
+    margin-bottom:30px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    color:#ff6b6b;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    border:2px solid #ff5a5a;
+    border-radius:12px;
+    background:#111;
+    color:white;
+    font-size:16px;
+    outline:none;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#bdbdbd;
+}
+
+textarea{
+    resize:none;
+}
+/* Button */
+
+button{
+    width:100%;
+    padding:16px;
+    margin-top:25px;
+    background:#ff5a5a;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button i{
+    margin-right:8px;
+}
+
+button:hover{
+    background:#ff2d2d;
+    transform:scale(1.03);
+    box-shadow:0 0 20px rgba(255,90,90,0.5);
+}
+
+/* Focus Effect */
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#ffffff;
+    box-shadow:0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .booking-box{
+        padding:25px;
+    }
+
+    .booking-box h1{
+        font-size:28px;
+    }
+
+    .booking-box p{
+        font-size:15px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size:15px;
+        padding:12px;
+    }
+
+    button{
+        font-size:17px;
+        padding:14px;
+    }
+
+}

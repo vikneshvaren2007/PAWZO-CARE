@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pazwa Care Booking</title>
+
+<link rel="stylesheet" href="booking.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="booking-container">
+
+<div class="booking-box">
+
+<h1>🐾 PAZWA CARE</h1>
+
+<p>Book Your Pet Grooming Appointment</p>
+
+<form id="bookingForm">
+
+<label>Customer Name</label>
+
+<input
+type="text"
+name="Customer_Name"
+placeholder="Enter Your Name"
+required>
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+name="Phone_Number"
+placeholder="Enter Phone Number"
+required>
+
+<label>Email</label>
+
+<input
+type="email"
+name="Email"
+placeholder="Enter Email Address"
+required>
+
+<label>Pet Name</label>
+
+<input
+type="text"
+name="Pet_Name"
+placeholder="Enter Pet Name"
+required>
+
+<label>Pet Age</label>
+
+<input
+type="number"
+name="Pet_Age"
+placeholder="Enter Pet Age"
+required>
+
+<label>Breed</label>
+
+<select name="Breed" required>
+    <option value="">Select Dog Breed</option>
+    <option>Labrador Retriever</option>
+    <option>Golden Retriever</option>
+    <option>German Shepherd</option>
+    <option>Beagle</option>
+    <option>Pug</option>
+    <option>Shih Tzu</option>
+    <option>Rottweiler</option>
+    <option>Doberman</option>
+    <option>Siberian Husky</option>
+    <option>Pomeranian</option>
+</select>
+<label>Service</label>
+
+<select name="Service" required>
+    <option value="">Select Service</option>
+    <option>Basic Grooming - ₹900</option>
+    <option>Premium Spa Bath - ₹1200</option>
+    <option>Premium Grooming - ₹1500</option>
+</select>
+
+<label>Appointment Date</label>
+
+<input
+type="date"
+name="Appointment_Date"
+required>
+
+<label>Special Notes</label>
+
+<textarea
+name="Message"
+rows="4"
+placeholder="Any special instructions..."></textarea>
+
+<button type="submit">
+    <i class="fa-solid fa-calendar-check"></i>
+    Confirm Booking
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("5-V34nBx-Tpjnm3GR");
+</script>
+
+<script src="booking.js"></script>
+
+</body>
+</html>
