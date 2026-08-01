@@ -7,6 +7,8 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -18,26 +20,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <header>
 
-<div class="logo">
-<h2>🐾 PAWZO CARE</h2>
+<div class="logo" onclick="location.reload();" style="cursor:pointer;">
+    <img src="images/logo.jpg" alt="Pawzo Care Logo">
+    <h2>PAWZO CARE</h2>
 </div>
 
-<nav>
+<div class="menu-btn" onclick="openMenu()">
+    ☰
+</div>
 
-<ul>
+<nav id="sideMenu">
+    <div class="close-btn" onclick="closeMenu()">✖</div>
 
-<li><a href="#home">Home</a></li>
+    <a href="#home" onclick="closeMenu()"> Home</a>
 
-<li><a href="#services">Services</a></li>
+    <a href="#services" onclick="closeMenu()"> Services</a>
 
-<li><a href="#reviews">Reviews</a></li>
+    <a href="#reviews" onclick="closeMenu()"> Reviews</a>
 
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
+    <a href="#contact" onclick="closeMenu()"> Contact</a>
 </nav>
-
 </header>
 
 <!-- Home Section -->
@@ -64,11 +66,15 @@ ear cleaning and much more.
 
 <div class="hero-image">
 
-<img src="images/hero.png" alt="Pet">
+<img id="heroImage" src="images/image.png" alt="Pet">
 
 </div>
 
 </section>
+
+<div class="announcement">
+    <p>🐾  🐶 Visit Our Pet Shop • 🎉 Get 10% OFF on All Grooming Services • 🐱 Book Your Appointment Today!</p>
+</div>
 
 <!-- Services -->
 
@@ -155,64 +161,174 @@ ear cleaning and much more.
 </section>
 
 <!-- Reviews -->
-
+ 
 <section id="reviews">
 
 <h2 class="title">Customer Reviews</h2>
 
-<div class="review-box">
+<div class="swiper reviewSwiper">
 
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
 <div class="review">
-
-<p>
-
-★★★★★
-
-</p>
-
-<p>
-
-Amazing service! My dog looks clean and happy.
-
-</p>
-
+<p>★★★★★</p>
+<p>Excellent grooming! My Golden Retriever looks amazing.</p>
 <h4>- Raj Kumar</h4>
-
+</div>
 </div>
 
+<div class="swiper-slide">
 <div class="review">
-
-<p>
-
-★★★★★
-
-</p>
-
-<p>
-
-Very friendly staff and excellent grooming.
-
-</p>
-
+<p>★★★★★</p>
+<p>Very friendly staff. Highly recommended.</p>
 <h4>- Priya</h4>
-
+</div>
 </div>
 
+<div class="swiper-slide">
 <div class="review">
-
-<p>
-
-★★★★★
-
-</p>
-
-<p>
-
-Best pet grooming center in our area.
-
-</p>
-
+<p>★★★★★</p>
+<p>My cat loved the grooming service.</p>
 <h4>- Arun</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Professional service and affordable price.</p>
+<h4>- Karthik</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Best pet grooming center in Nagercoil.</p>
+<h4>- Meena</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Excellent spa bath for my puppy.</p>
+<h4>- Sanjay</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Very clean place and caring staff.</p>
+<h4>- Divya</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Fantastic grooming experience.</p>
+<h4>- Naveen</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>My pet smells fresh for days.</p>
+<h4>- Ashwin</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Worth every rupee. Amazing service.</p>
+<h4>- Keerthi</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Excellent haircut and nail clipping.</p>
+<h4>- Suresh</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>My Labrador looks fantastic now.</p>
+<h4>- Vignesh</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Very polite staff and fast service.</p>
+<h4>- Harini</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Best grooming for dogs and cats.</p>
+<h4>- Akash</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>My Persian cat looks beautiful.</p>
+<h4>- Swetha</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Clean environment and premium products.</p>
+<h4>- Bala</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Very happy with the grooming quality.</p>
+<h4>- Mohan</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Excellent customer support.</p>
+<h4>- Ajith</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>Highly recommended for every pet owner.</p>
+<h4>- Deepa</h4>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="review">
+<p>★★★★★</p>
+<p>PAWZO CARE is the best pet grooming center.</p>
+<h4>- Rahul</h4>
+</div>
+</div>
 
 </div>
 
@@ -279,6 +395,7 @@ Tamil Nadu
 <a href="booking.html" class="whatsapp">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 
 </body>
