@@ -24,7 +24,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
     .then(function() {
 
     const message =
-`🐾 *New Booking*
+`   *New Booking*
 
 Customer: ${form.Customer_Name.value}
 Phone: ${form.Phone_Number.value}
