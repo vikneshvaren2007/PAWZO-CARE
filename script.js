@@ -78,3 +78,47 @@ if(footer){
 footer.innerHTML="© "+new Date().getFullYear()+" Pazwa Care | All Rights Reserved";
 
 }
+
+const images = [
+    "images/image.png",
+    "images/image2.png"
+];
+
+let current = 0;
+const heroImage = document.getElementById("heroImage");
+
+setInterval(() => {
+    current = (current + 1) % images.length;
+    heroImage.src = images[current];
+}, 2000);
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("show");
+}
+function openMenu(){
+    document.getElementById("sideMenu").style.right = "0";
+}
+
+function closeMenu(){
+    document.getElementById("sideMenu").style.right = "-260px";
+}
+const swiper = new Swiper(".reviewSwiper", {
+    loop:true,
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false
+    },
+    slidesPerView:3,
+    spaceBetween:30,
+
+    breakpoints:{
+        0:{
+            slidesPerView:1
+        },
+        768:{
+            slidesPerView:2
+        },
+        1024:{
+            slidesPerView:3
+        }
+    }
+});
