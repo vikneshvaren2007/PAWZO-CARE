@@ -122,3 +122,24 @@ const swiper = new Swiper(".reviewSwiper", {
         }
     }
 });
+const serviceSwiper = new Swiper(".serviceSwiper", {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    spaceBetween: 30,
+    slidesPerView: 3,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+    }
+});
