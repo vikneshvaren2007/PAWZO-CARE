@@ -127,30 +127,59 @@ textarea:focus{
 
 /* Mobile Responsive */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-    .booking-box{
-        padding:25px;
-    }
+header{
+    padding:15px 20px;
+}
 
-    .booking-box h1{
-        font-size:28px;
-    }
+.menu-btn{
+    display:block;
+}
 
-    .booking-box p{
-        font-size:15px;
-    }
+#sideMenu{
+    width:250px;
+}
 
-    input,
-    select,
-    textarea{
-        font-size:15px;
-        padding:12px;
-    }
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:110px 20px 50px;
+}
 
-    button{
-        font-size:17px;
-        padding:14px;
-    }
+.hero-text,
+.hero-image{
+    width:100%;
+}
 
+.hero-text h1{
+    font-size:32px;
+}
+
+.hero-text p{
+    font-size:16px;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:350px;
+}
+
+.title{
+    font-size:32px;
+}
+
+.contact{
+    flex-direction:column;
+    padding:25px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.logo h2{
+    font-size:22px;
+}
 }
