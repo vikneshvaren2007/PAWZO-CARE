@@ -152,6 +152,7 @@ nav ul li a:hover{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
+    width: 100%;
 }
 
 .card{
@@ -314,7 +315,7 @@ footer{
     white-space:nowrap;
     display:inline-block;
     color:#111;
-    font-size:20px;
+    font-size:16px;
     font-weight:bold;
     animation:ticker 30s linear infinite;
 }
@@ -413,9 +414,7 @@ nav ul{
 /* MENU BUTTON */
 
 .menu-btn{
-    font-size:34px;
-    color:#ff6b3d;
-    cursor:pointer;
+    display: none;
 }
 
 /* SIDE MENU */
