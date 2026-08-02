@@ -329,6 +329,32 @@ footer{
     }
 }
 
+/* Desktop */
+
+.menu-btn{
+    display: none;
+}
+
+#sideMenu{
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+#sideMenu a{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.close-btn{
+    display: none;
+}
 
 /* Mobile */
 
@@ -369,6 +395,24 @@ footer{
 .hero-image{
     width:100%;
 }
+.menu-btn{
+    display:block;
+}
+
+#sideMenu{
+    position:fixed;
+    top:0;
+    right:-260px;
+    width:250px;
+    height:100%;
+    background:#111;
+    transition:0.4s;
+    z-index:9999;
+}
+
+.close-btn{
+    display:block;
+}
 }
 .menu-icon{
     font-size:35px;
@@ -407,6 +451,9 @@ footer{
 
 .menu-btn{
     display: none;
+    font-size: 35px;
+    color:#ff6b3d;
+    cursor:pointer;
 }
 
 /* SIDE MENU */
@@ -455,29 +502,3 @@ footer{
     justify-content:center;
 }
 
-/* Desktop */
-
-.menu-btn{
-    display: none;
-}
-
-#sideMenu{
-    position: static;
-    width: auto;
-    height: auto;
-    background: transparent;
-    padding: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-}
-
-#sideMenu a{
-    display: inline-block;
-    padding: 0 15px;
-    font-size: 18px;
-}
-
-.close-btn{
-    display: none;
-}
