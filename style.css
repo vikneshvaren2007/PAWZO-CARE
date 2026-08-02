@@ -90,6 +90,12 @@ nav ul li a:hover{
     line-height:1.2;
 }
 
+.hero-paw{
+    font-size:60px;
+    color:white;
+    margin-bottom:20px;
+}
+
 .hero-text p{
     margin:25px 0;
     color:#ddd;
@@ -397,6 +403,17 @@ footer{
 .hero-image{
     width:100%;
 }
+
+.hero-paw{
+    display:block;
+    margin:0 auto 20px;
+}
+
+.hero-text h1{
+    font-size:44px;
+    line-height:1.2;
+}
+
 .menu-btn{
     display:block;
 }
